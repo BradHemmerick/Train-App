@@ -5,15 +5,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <style>
-        .jumbotron {
-            background-color: #337ab7;
-            color: white;
-        }
-        button {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -38,14 +30,17 @@
                                     <th>Frequency(mins)</th>
                                     <th>First Train Time</th>
                                     <th>Minutes away</th>
+                                    <th>Arival Time</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td id="TrainNames"></td>
                                     <td id="destination"></td>
+                                    <td id="frequency">
                                     <td id="firstTrain"></td>
                                     <td id="minsAway"></td>
+                                    <td id="arivalTime"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -76,6 +71,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script src="app.js"></script>
